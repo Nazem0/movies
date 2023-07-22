@@ -24,10 +24,10 @@ function drawMovies() {
             <img src=${movies[i].Poster}>
             <div>
                 <h2>${movies[i].Title}</h2>
-                <div>
+                <!--<div>
                     <b>Story</b>
                     <p>${movies[i].Plot}</p>
-                </div>
+                </div>-->
                 <div>
                     <b>Genre</b>
                     <p>${movies[i].Genre.split(',').join(', ')}</p>
