@@ -68,8 +68,7 @@ a {
 #filtering
 {
     display: flex;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin: 2em;
 }
 
 #filtering>*{
@@ -80,12 +79,12 @@ a {
 #search
 {
     border-bottom-left-radius: 10px;
-    width: 30%;
+    min-width: 30%;
     margin-left: auto;
 }
 #genreFilter
 {
-    width: 10%;
+    min-width: 10%;
     border-top-right-radius: 10px;
     margin-right: auto;
 
