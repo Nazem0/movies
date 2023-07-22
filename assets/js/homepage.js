@@ -15,8 +15,39 @@ request.onreadystatechange = () => {
 var genres = [];
 function drawMovies() {
     moviesContainer.innerHTML = "";
+    //Show all the movies that it's title starts with the search value
     for (var i = 0; i < movies.length; i++) {
-        if (movies[i].Genre.indexOf(genreFilter.value) != -1 && movies[i].Title.toLowerCase().indexOf(search.value.toLowerCase()) != -1) {
+        if (movies[i].Genre.indexOf(genreFilter.value) != -1 && movies[i].Title.toLowerCase().indexOf(search.value.toLowerCase()) == 0) {
+            genreSplit = movies[i].Genre.split(',');
+            moviesContainer.innerHTML += `
+        <div class="movie">
+            <a href="movie.html?movieID=${i}">
+            <img src=${movies[i].Poster}>
+            <div>
+                <h2>${movies[i].Title}</h2>
+                <!--<div>
+                    <b>Story</b>
+                    <p>${movies[i].Plot}</p>
+                </div>-->
+                <p>
+                    <b>Genre: </b>
+                    ${movies[i].Genre.split(',').join(', ')}
+                </p>
+                <p><b>Year: </b> ${movies[i].Year}</p>
+            </div>
+            </a>
+        </div>`;
+            for (var j = 0; j < genreSplit.length; j++) {
+                if (!genres.includes(genreSplit[j])) {
+                    genres.push(genreSplit[j]);
+                    genreFilter.innerHTML += `<option value=${genreSplit[j]}>${genreSplit[j]}</option>`;
+                }
+            }
+        }
+    }
+    //Then show all the movies that it's title includes the search value
+    for (var i = 0; i < movies.length; i++) {
+        if (movies[i].Genre.indexOf(genreFilter.value) != -1 && movies[i].Title.toLowerCase().indexOf(search.value.toLowerCase()) > 0) {
             genreSplit = movies[i].Genre.split(',');
             moviesContainer.innerHTML += `
         <div class="movie">
@@ -54,6 +85,7 @@ search.addEventListener('keyup', () => {
     drawMovies();
 }
 );
+
 /*
 -------------->GOING TO NEED THIS TO GET SPECIFIC URL PARAMETER<--------------
 // Create urlParams query string
