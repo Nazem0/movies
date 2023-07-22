@@ -28,10 +28,10 @@ function drawMovies() {
                     <b>Story</b>
                     <p>${movies[i].Plot}</p>
                 </div>-->
-                <div>
-                    <b>Genre</b>
-                    <p>${movies[i].Genre.split(',').join(', ')}</p>
-                </div>
+                <p>
+                    <b>Genre: </b>
+                    ${movies[i].Genre.split(',').join(', ')}
+                </p>
                 <p><b>Year: </b> ${movies[i].Year}</p>
             </div>
             </a>
