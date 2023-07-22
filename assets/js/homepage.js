@@ -50,7 +50,7 @@ genreFilter.addEventListener('change', () => {
 })
 
 
-search.addEventListener('change', () => {
+search.addEventListener('keyup', () => {
     drawMovies();
 }
 );
