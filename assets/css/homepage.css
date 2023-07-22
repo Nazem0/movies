@@ -68,12 +68,14 @@ a {
 #filtering
 {
     display: flex;
-    margin: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 #filtering>*{
     border:0px;
     text-align: center;
+    padding: 5px;
 }
 #search
 {
@@ -83,6 +85,7 @@ a {
 }
 #genreFilter
 {
+    width: 10%;
     border-top-right-radius: 10px;
     margin-right: auto;
 
