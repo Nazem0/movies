@@ -4,7 +4,7 @@ var genreFilter = document.getElementById('genreFilter')
 
 var movies = "";
 var request = new XMLHttpRequest();
-request.open('get', 'http://127.0.0.1:3000/assets/data/movies.json')
+request.open('get', 'assets/data/movies.json')
 request.send()
 request.onreadystatechange = () => {
     if (request.readyState == 4) {
