@@ -21,7 +21,7 @@ function checkLocalStorage() {
     }
     //console.log(local);
 }
-var users;
+var users=[];
 if(localStorage.getItem('users')){
     users=localStorage.getItem('users');
 }
