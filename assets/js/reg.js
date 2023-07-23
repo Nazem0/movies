@@ -32,6 +32,7 @@ function register() {
         password: password,
     };
     var json = JSON.stringify(user);
-    localStorage.setItem(username, json);
+    // localStorage.setItem(username, json);
+    localStorage.setItem('users', json);
    // console.log('the register user is: ' + json);
 }
