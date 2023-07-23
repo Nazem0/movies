@@ -1,6 +1,7 @@
 var username;
 var email;
 var user = {};
+var oldDB=localStorage.getItem('users');
 
 function checkLocalStorage() {
     var local = [];
@@ -25,8 +26,10 @@ function checkLocalStorage() {
 // var users=localStorage.getItem('users');
 function register() {
     var users = [];
-    if (localStorage.getItem('users')) {
-        users.push(JSON.parse(localStorage.getItem('users')));
+    if (oldDB) {
+        oldDB.forEach(element => {
+            users.push(element)
+        });
     }
     username = document.getElementById('username').value;
     email = document.getElementById('email').value;
