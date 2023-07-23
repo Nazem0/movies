@@ -22,9 +22,9 @@ function checkLocalStorage() {
     //console.log(local);
 }
 var users=[];
-// if(localStorage.getItem('users')){
-//     users=localStorage.getItem('users');
-// }
+if(localStorage.getItem('users')){
+    users+=localStorage.getItem('users');
+}
 // var users=localStorage.getItem('users');
 function register() {
     username = document.getElementById('username').value;
