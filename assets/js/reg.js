@@ -1,7 +1,7 @@
 var username;
 var email;
 var user = {};
-var oldDB=localStorage.getItem('users');
+var oldDB=JSON.parse(localStorage.getItem('users'));
 
 function checkLocalStorage() {
     var local = [];
