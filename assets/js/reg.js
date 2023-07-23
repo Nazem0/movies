@@ -23,7 +23,7 @@ function checkLocalStorage() {
 }
 var users=[];
 if(localStorage.getItem('users')){
-    users+=localStorage.getItem('users');
+    users+=JSON.parse(localStorage.getItem('users'));
 }
 // var users=localStorage.getItem('users');
 function register() {
