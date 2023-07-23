@@ -27,9 +27,7 @@ function checkLocalStorage() {
 function register() {
     var users = [];
     if (oldDB) {
-        oldDB.forEach(element => {
-            users.push(element)
-        });
+        users=oldDB;
     }
     username = document.getElementById('username').value;
     email = document.getElementById('email').value;
