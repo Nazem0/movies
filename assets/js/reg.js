@@ -26,7 +26,7 @@ function checkLocalStorage() {
 function register() {
     var users = [];
     if (localStorage.getItem('users')) {
-        users += JSON.parse(localStorage.getItem('users'));
+        users.push(JSON.parse(localStorage.getItem('users')));
     }
     username = document.getElementById('username').value;
     email = document.getElementById('email').value;
