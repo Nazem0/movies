@@ -21,7 +21,7 @@ function checkLocalStorage() {
     }
     //console.log(local);
 }
-
+var users=[]
 function register() {
     username = document.getElementById('username').value;
     email = document.getElementById('email').value;
@@ -31,7 +31,8 @@ function register() {
         email: email,
         password: password,
     };
-    var json = JSON.stringify(user);
+    users.push(user);
+    var json = JSON.stringify(users);
     // localStorage.setItem(username, json);
     localStorage.setItem('users', json);
    // console.log('the register user is: ' + json);
