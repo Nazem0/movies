@@ -6,18 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/homepage.css">
 </head>
 
 <body>
-    <div id="filtering">
-        <input type="text" name="search" id="search" placeholder="Search By Title">
-        <select name="genre" id="genreFilter">
-            <option value="">Filter</option>
-        </select>
-    </div>
-
     <div id="moviesContainer"></div>
+    <script>
+        document.body.insertAdjacentHTML('afterbegin',
+            `<div class="navbar">
+                <ul type="none">
+                    <li><a class="active" href="#home">Home<img src="assets/data/house-solid.svg" alt=""></a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div id="filtering">
+                        <input type="text" name="search" id="search" placeholder="Search By Title">
+                        <select name="genre" id="genreFilter">
+                            <option value="">Filter</option>
+                        </select>
+                    </div>
+                    <ul type="none">
+                    <li><a href="#news">Register</a></li>
+                    <li><a href="#contact">Login</a></li>
+                </ul>
+            </div>`)
+    </script>
     <script src="assets/js/homepage.js"></script>
 </body>
 
