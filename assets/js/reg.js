@@ -1,33 +1,27 @@
 var username;
 var email;
 var user = {};
-var oldDB=JSON.parse(localStorage.getItem('users'));
+var oldDB = JSON.parse(localStorage.getItem('users'));
 
 function checkLocalStorage() {
-    var local = [];
+    var localUser = [];
+    var localEmail = [];
     username = document.getElementById('username').value;
-    // +1 34an m4 by5o4 el loop law mafe4 users
-    for (var i = 0; i < localStorage.length + 1; i++) {
-        var key = localStorage.key(i)
-        // console.log('local : ' + localStorage.getItem(i));
-        // console.log(`${key}: ${localStorage.getItem(key)}`);
-        local[i] = key;
+    email = document.getElementById('email').value;
+    for (var i = 0; i < oldDB.length; i++) {
+        localUser[i] = oldDB[i].username;
     }
-    if (local.indexOf(username) > -1) {
-        //console.log('1')
-        alert('Username is no available!');
+    if (localUser.indexOf(username) || localEmail.indexOf(email) > -1) {
+        alert('Username or Email are no available!');
     } else {
-        // console.log('2')
         register();
     }
-    //console.log(local);
 }
 
-// var users=localStorage.getItem('users');
 function register() {
     var users = [];
     if (oldDB) {
-        users=oldDB;
+        users = oldDB;
     }
     username = document.getElementById('username').value;
     email = document.getElementById('email').value;
@@ -39,7 +33,5 @@ function register() {
     };
     users.push(user);
     var json = JSON.stringify(users);
-    // localStorage.setItem(username, json);
     localStorage.setItem('users', json);
-    // console.log('the register user is: ' + json);
 }
