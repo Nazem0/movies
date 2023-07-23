@@ -21,7 +21,7 @@ function checkLocalStorage() {
     }
     //console.log(local);
 }
-var users=[]
+var users=localStorage.getItem('users');
 function register() {
     username = document.getElementById('username').value;
     email = document.getElementById('email').value;
