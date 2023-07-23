@@ -1,10 +1,7 @@
 var username;
 var email;
 var user = {};
-var users=[];
-if(localStorage.getItem('users')){
-    users+=JSON.parse(localStorage.getItem('users'));
-}
+
 function checkLocalStorage() {
     var local = [];
     username = document.getElementById('username').value;
@@ -27,6 +24,10 @@ function checkLocalStorage() {
 
 // var users=localStorage.getItem('users');
 function register() {
+    var users = [];
+    if (localStorage.getItem('users')) {
+        users += JSON.parse(localStorage.getItem('users'));
+    }
     username = document.getElementById('username').value;
     email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
@@ -39,5 +40,5 @@ function register() {
     var json = JSON.stringify(users);
     // localStorage.setItem(username, json);
     localStorage.setItem('users', json);
-   // console.log('the register user is: ' + json);
+    // console.log('the register user is: ' + json);
 }
