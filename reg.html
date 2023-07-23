@@ -13,13 +13,13 @@
     <h2>Registration</h2>
     <form action="#">
       <div class="input-box">
-        <input id="username" type="text" placeholder="Enter your name" >
+        <input id="username" type="text" placeholder="Enter your name" required>
       </div>
       <div class="input-box">
-        <input id="email" type="email" placeholder="Enter your email" >
+        <input id="email" type="email" placeholder="Enter your email" required>
       </div>
       <div class="input-box">
-        <input id="password" type="password" placeholder="Create password" >
+        <input id="password" type="password" placeholder="Create password" minlength= 8 required>
       </div>
       <div class="reg">
         <input type="Submit" value=" Register Now " onclick="checkLocalStorage()">
