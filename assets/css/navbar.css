@@ -1,3 +1,8 @@
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
 .navbar {
     background-color: rgba(0, 0, 0, 0.3);
     overflow: hidden;
@@ -7,6 +12,7 @@
     display: flex;
     align-items: center;
 }
+
 
 .navbar>ul {
     width: fit-content;
