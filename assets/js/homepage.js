@@ -21,7 +21,7 @@ function drawMovies() {
             genreSplit = movies[i].Genre.split(',');
             moviesContainer.innerHTML += `
         <div class="movie">
-            <img src=${movies[i].Poster}>
+            <img src=${movies[i].Poster} loading="lazy">
             <div>
                 <h2>${movies[i].Title}</h2>
                 <!--<div>
