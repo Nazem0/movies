@@ -8,6 +8,10 @@
 
 body {
     background: radial-gradient(circle, rgb(245, 179, 179) 0%, rgb(64, 14, 151)100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 a {
