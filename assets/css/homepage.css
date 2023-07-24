@@ -40,7 +40,7 @@
     margin-left:0.5em;
     margin-right:0.5em;
 }
-.movie>div *
+.movie>div>*
 {
     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
 
