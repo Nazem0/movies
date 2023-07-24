@@ -1,5 +1,5 @@
 .navbar {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 1);
     overflow: hidden;
     width: 100%;
     margin-bottom: 2em;
@@ -8,6 +8,7 @@
     align-items: center;
     position: fixed;
     top:0;
+    z-
 }
 
 
