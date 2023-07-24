@@ -1,5 +1,5 @@
 #moviesContainer {
-    margin: 0 5em 5em 5em;
+    margin: 5em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
