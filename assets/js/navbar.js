@@ -4,7 +4,7 @@ document.body.insertAdjacentHTML('afterbegin',
             `
 <div class="navbar">
                 <ul type="none">
-                    <li><a class="active" href="/">
+                    <li><a class="active" href="index.html">
                     <i class="fa-solid fa-house"></i>
                         Home
                         </a></li>
