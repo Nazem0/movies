@@ -1,4 +1,4 @@
-const head=document.getElementsByTagName('head');
+const head=document.getElementsByTagName('head')[0];
 head.insertAdjacentHTML('beforeend',`<link rel="stylesheet" href="assets/css/navbar.css">`)
 document.body.insertAdjacentHTML('afterbegin',
             `
