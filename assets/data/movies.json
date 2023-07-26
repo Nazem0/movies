@@ -14,7 +14,8 @@
     "Country": "USA, UK",
     "Awards": "Won 3 Oscars. Another 80 wins & 121 nominations.",
     "Poster": "https://www.themoviedb.org/t/p/original/kyeqWdyUXW608qlYkRqosgbbJyK.jpg",
-    "Trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
+    "Trailer": "https://www.youtube.com/embed/5PSNL1qE6VY",
+    "Rating": 4
   },
   {
     "Title": "Avengers: Endgame",
@@ -31,7 +32,8 @@
     "Country": "USA",
     "Awards": "Won 1 Oscar. Another 71 wins & 114 nominations.",
     "Poster": "https://www.themoviedb.org/t/p/original/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
-    "Trailer": "https://www.youtube.com/embed/TcMBFSGVi1c"
+    "Trailer": "https://www.youtube.com/embed/TcMBFSGVi1c",
+    "Rating": 5
   },
   {
     "Title": "Inception",
@@ -48,7 +50,8 @@
     "Country": "USA, UK",
     "Awards": "Won 4 Oscars. Another 152 wins & 217 nominations.",
     "Poster": "https://www.themoviedb.org/t/p/original/edv5CZvWj09upOsy2Y6IwDhK8bt.jpg",
-    "Trailer": "https://www.youtube.com/embed/YoHD9XEInc0"
+    "Trailer": "https://www.youtube.com/embed/YoHD9XEInc0",
+    "Rating": 5
   },
   {
     "Title": "Interstellar",
@@ -65,7 +68,8 @@
     "Country": "USA, UK, Canada",
     "Awards": "Won 1 Oscar. Another 43 wins & 148 nominations.",
     "Poster": "https://www.themoviedb.org/t/p/original/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
-    "Trailer": "https://www.youtube.com/embed/0vxOhd4qlnA"
+    "Trailer": "https://www.youtube.com/embed/0vxOhd4qlnA",
+    "Rating": 4
   },
   {
     "Title": "I Am Legend",
@@ -82,7 +86,8 @@
     "Country": "USA",
     "Awards": "9 wins & 21 nominations.",
     "Poster": "https://www.themoviedb.org/t/p/original/iPDkaSdKk2jRLTM65UOEoKtsIZ8.jpg",
-    "Trailer": "https://www.youtube.com/embed/dtKMEAXyPkg"
+    "Trailer": "https://www.youtube.com/embed/dtKMEAXyPkg",
+    "Rating": 3
   },
   {
     "Title": "Joker",
@@ -99,7 +104,8 @@
     "Country": "USA, Canada",
     "Awards": "Won 2 Oscars. Another 107 wins & 234 nominations.",
     "Poster": "https://www.themoviedb.org/t/p/original/mZuAPY4ETMQPHhCXIcJ90kd6RaS.jpg",
-    "Trailer": "https://www.youtube.com/embed/zAGVQLHvwOY"
+    "Trailer": "https://www.youtube.com/embed/zAGVQLHvwOY",
+    "Rating": 5
   },
   {
     "Title": "John Wick",
@@ -116,7 +122,8 @@
     "Country": "USA, China",
     "Awards": "6 wins & 12 nominations.",
     "Poster": "https://www.themoviedb.org/t/p/original/wXqWR7dHncNRbxoEGybEy7QTe9h.jpg",
-    "Trailer": "https://www.youtube.com/embed/2AUmvWm5ZDQ"
+    "Trailer": "https://www.youtube.com/embed/2AUmvWm5ZDQ",
+    "Rating": 4
   },
   {
     "Title": "John Wick: Chapter 2",
@@ -133,7 +140,8 @@
     "Country": "USA, Hong Kong",
     "Awards": "6 wins & 16 nominations.",
     "Poster": "https://www.themoviedb.org/t/p/original/hXWBc0ioZP3cN4zCu6SN3YHXZVO.jpg",
-    "Trailer": "https://www.youtube.com/embed/XGk2EfbD_Ps"
+    "Trailer": "https://www.youtube.com/embed/XGk2EfbD_Ps",
+    "Rating": 4
   },
   {
     "Title": "John Wick: Chapter 3",
@@ -150,7 +158,8 @@
     "Country": "USA",
     "Awards": "14 wins & 24 nominations.",
     "Poster": "https://www.themoviedb.org/t/p/original/ziEuG1essDuWuC5lpWUaw1uXY2O.jpg",
-    "Trailer": "https://www.youtube.com/embed/pU8-7BX9uxs"
+    "Trailer": "https://www.youtube.com/embed/pU8-7BX9uxs",
+    "Rating": 5
   },
   {
     "Title": "John Wick: Chapter 4",
@@ -167,7 +176,8 @@
     "Country": "USA, Japan",
     "Awards": "TBA",
     "Poster": "https://www.themoviedb.org/t/p/original/8CYSvYTw9tbFynivdcBcoqRWPGM.jpg",
-    "Trailer": "https://www.youtube.com/embed/qEVUtrk8_B4"
+    "Trailer": "https://www.youtube.com/embed/qEVUtrk8_B4",
+    "Rating": 3
   },
   {
     "Title": "Spider-Man: Into the Spider-Verse",
@@ -184,7 +194,8 @@
     "Country": "USA",
     "Awards": "Won 1 Oscar. Another 80 wins & 80 nominations.",
     "Poster": "https://www.themoviedb.org/t/p/original/3cZn1k8x0bikrDKEy9ZKJ6Vdj30.jpg",
-    "Trailer": "https://www.youtube.com/embed/g4Hbz2jLxvQ"
+    "Trailer": "https://www.youtube.com/embed/g4Hbz2jLxvQ",
+    "Rating": 5
   },
   {
     "Title": "The Dark Knight",
@@ -201,7 +212,8 @@
     "Country": "USA, UK",
     "Awards": "Won 2 Oscars. Another 157 wins & 163 nominations.",
     "Poster": "https://www.themoviedb.org/t/p/original/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
-    "Trailer": "https://www.youtube.com/embed/EXeTwQWrcwY"
+    "Trailer": "https://www.youtube.com/embed/EXeTwQWrcwY",
+    "Rating": 5
   },
   {
     "Title": "The Matrix",
@@ -218,7 +230,8 @@
     "Country": "USA, Australia",
     "Awards": "Won 4 Oscars. Another 37 wins & 51 nominations.",
     "Poster": "https://www.themoviedb.org/t/p/original/Cv6uwxudNU6kDdGwgOJNNxCEWI.jpg",
-    "Trailer": "https://www.youtube.com/embed/m8e-FF8MsqU"
+    "Trailer": "https://www.youtube.com/embed/m8e-FF8MsqU",
+    "Rating": 4
   },
   {
     "Title": "The Matrix Reloaded",
@@ -235,7 +248,8 @@
     "Country": "USA, Australia",
     "Awards": "Nominated for 2 Oscars. Another 22 wins & 51 nominations.",
     "Poster": "https://www.themoviedb.org/t/p/original/aA5qHS0FbSXO8PxcxUIHbDrJyuh.jpg",
-    "Trailer": "https://www.youtube.com/embed/kYzz0FSgpSU"
+    "Trailer": "https://www.youtube.com/embed/kYzz0FSgpSU",
+    "Rating": 4
   },
   {
     "Title": "The Matrix Revolutions",
@@ -252,6 +266,7 @@
     "Country": "USA, Australia",
     "Awards": "4 wins & 27 nominations.",
     "Poster": "https://www.themoviedb.org/t/p/original/qEWiBXJGXK28jGBAm8oFKKTB0WD.jpg",
-    "Trailer": "https://www.youtube.com/embed/hMbexEPAOQI"
+    "Trailer": "https://www.youtube.com/embed/hMbexEPAOQI",
+    "Rating": 3
   }
 ]

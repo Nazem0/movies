@@ -44,7 +44,8 @@
 }
 
 #filtering>* {
-    border: 0px;
+    border: none;
+    outline: none;
     text-align: center;
     padding: 5px;
     background: rgba(255,255,255,0.8);

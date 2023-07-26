@@ -1,0 +1,45 @@
+#movieContainer {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 3em;
+}
+
+#movie {
+    margin: auto;
+    width: 80%;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+
+}
+
+#movieDetails {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+
+}
+
+#movieDetails p {
+    font-size: 15px !important;
+}
+
+#movieDetails b {
+    font-size: larger;
+}
+
+#player_Info {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    align-items: center;
+}
+
+iframe {
+    margin-top: 2em;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.title {
+    font-size: xxx-large;
+    color: white;
+}
