@@ -11,14 +11,16 @@ request.onreadystatechange = () => {
    if (request.readyState == 4) {
       movies = JSON.parse(request.responseText)
       movie = movies[movieID];
-      movieContainer.innerHTML += (`
-      <div id="movie">
+      movieContainer.innerHTML += (
+      `<div id="movie">
          <span class="title">${movie.Title}</span>
          <div id="player_Info">
             <div id="playerContainer">
                <iframe width="860" height="480" src="${movie.Trailer}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div id="movieDetails">
+            <span class="title">Description</span>
+            <hr>
                <p><b>Actors:</b> ${movie.Actors}</p>
                <p><b>Awards:</b> ${movie.Awards}</p>
                <p><b>Country:</b> ${movie.Country}</p>
@@ -32,8 +34,8 @@ request.onreadystatechange = () => {
                <p id="rating"><b>Rating: </b></p>
             </div>
          </div>
-      </div>
-            `)
+      </div>`
+      )
          const rating=document.getElementById('rating');
          for(let i=0; i<movie.Rating;i++)
          {
