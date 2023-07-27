@@ -14,24 +14,8 @@
     "Country": "USA, UK",
     "Awards": "Won 3 Oscars. Another 80 wins & 121 nominations.",
     "Poster": "https://www.themoviedb.org/t/p/original/kyeqWdyUXW608qlYkRqosgbbJyK.jpg",
-    "Trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
-  },
-  {
-    "Title": "Avengers: Endgame",
-    "Year": "2019",
-    "Rated": "PG-13",
-    "Released": "26 Apr 2019",
-    "Runtime": "181 min",
-    "Genre": "Action,Adventure,Drama",
-    "Director": "Anthony Russo, Joe Russo",
-    "Writer": "Christopher Markus, Stephen McFeely",
-    "Actors": "Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth",
-    "Plot": "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
-    "Language": "English, Japanese, Xhosa",
-    "Country": "USA",
-    "Awards": "Won 1 Oscar. Another 71 wins & 114 nominations.",
-    "Poster": "https://www.themoviedb.org/t/p/original/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
-    "Trailer": "https://www.youtube.com/embed/TcMBFSGVi1c"
+    "Trailer": "https://www.youtube.com/embed/5PSNL1qE6VY",
+    "Rating": 4
   },
   {
     "Title": "Inception",
@@ -48,7 +32,8 @@
     "Country": "USA, UK",
     "Awards": "Won 4 Oscars. Another 152 wins & 217 nominations.",
     "Poster": "https://www.themoviedb.org/t/p/original/edv5CZvWj09upOsy2Y6IwDhK8bt.jpg",
-    "Trailer": "https://www.youtube.com/embed/YoHD9XEInc0"
+    "Trailer": "https://www.youtube.com/embed/YoHD9XEInc0",
+    "Rating": 5
   },
   {
     "Title": "Interstellar",
@@ -65,7 +50,8 @@
     "Country": "USA, UK, Canada",
     "Awards": "Won 1 Oscar. Another 43 wins & 148 nominations.",
     "Poster": "https://www.themoviedb.org/t/p/original/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
-    "Trailer": "https://www.youtube.com/embed/0vxOhd4qlnA"
+    "Trailer": "https://www.youtube.com/embed/0vxOhd4qlnA",
+    "Rating": 4
   },
   {
     "Title": "I Am Legend",
@@ -82,7 +68,8 @@
     "Country": "USA",
     "Awards": "9 wins & 21 nominations.",
     "Poster": "https://www.themoviedb.org/t/p/original/iPDkaSdKk2jRLTM65UOEoKtsIZ8.jpg",
-    "Trailer": "https://www.youtube.com/embed/dtKMEAXyPkg"
+    "Trailer": "https://www.youtube.com/embed/dtKMEAXyPkg",
+    "Rating": 3
   },
   {
     "Title": "Joker",
@@ -99,7 +86,8 @@
     "Country": "USA, Canada",
     "Awards": "Won 2 Oscars. Another 107 wins & 234 nominations.",
     "Poster": "https://www.themoviedb.org/t/p/original/mZuAPY4ETMQPHhCXIcJ90kd6RaS.jpg",
-    "Trailer": "https://www.youtube.com/embed/zAGVQLHvwOY"
+    "Trailer": "https://www.youtube.com/embed/zAGVQLHvwOY",
+    "Rating": 5
   },
   {
     "Title": "John Wick",
@@ -116,7 +104,8 @@
     "Country": "USA, China",
     "Awards": "6 wins & 12 nominations.",
     "Poster": "https://www.themoviedb.org/t/p/original/wXqWR7dHncNRbxoEGybEy7QTe9h.jpg",
-    "Trailer": "https://www.youtube.com/embed/2AUmvWm5ZDQ"
+    "Trailer": "https://www.youtube.com/embed/2AUmvWm5ZDQ",
+    "Rating": 4
   },
   {
     "Title": "John Wick: Chapter 2",
@@ -133,7 +122,8 @@
     "Country": "USA, Hong Kong",
     "Awards": "6 wins & 16 nominations.",
     "Poster": "https://www.themoviedb.org/t/p/original/hXWBc0ioZP3cN4zCu6SN3YHXZVO.jpg",
-    "Trailer": "https://www.youtube.com/embed/XGk2EfbD_Ps"
+    "Trailer": "https://www.youtube.com/embed/XGk2EfbD_Ps",
+    "Rating": 4
   },
   {
     "Title": "John Wick: Chapter 3",
@@ -150,7 +140,8 @@
     "Country": "USA",
     "Awards": "14 wins & 24 nominations.",
     "Poster": "https://www.themoviedb.org/t/p/original/ziEuG1essDuWuC5lpWUaw1uXY2O.jpg",
-    "Trailer": "https://www.youtube.com/embed/pU8-7BX9uxs"
+    "Trailer": "https://www.youtube.com/embed/pU8-7BX9uxs",
+    "Rating": 5
   },
   {
     "Title": "John Wick: Chapter 4",
@@ -167,7 +158,115 @@
     "Country": "USA, Japan",
     "Awards": "TBA",
     "Poster": "https://www.themoviedb.org/t/p/original/8CYSvYTw9tbFynivdcBcoqRWPGM.jpg",
-    "Trailer": "https://www.youtube.com/embed/qEVUtrk8_B4"
+    "Trailer": "https://www.youtube.com/embed/qEVUtrk8_B4",
+    "Rating": 3
+  },{
+    "Title": "Spider-Man",
+    "Year": "2002",
+    "Rated": "PG-13",
+    "Released": "03 May 2002",
+    "Runtime": "121 min",
+    "Genre": "Action, Adventure, Sci-Fi",
+    "Director": "Sam Raimi",
+    "Writer": "David Koepp",
+    "Actors": "Tobey Maguire, Kirsten Dunst, Willem Dafoe",
+    "Plot": "After being bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he must use to fight evil as a superhero.",
+    "Language": "English",
+    "Country": "USA",
+    "Awards": "Nominated for 2 Oscars. Another 16 wins & 58 nominations.",
+    "Poster": "https://www.themoviedb.org/t/p/original/o19Uwa0e4WoeKXSelFlWO4NAd7R.jpg",
+    "Trailer": "https://www.youtube.com/embed/O7zvehDxttM",
+    "Rating": 4
+  },
+  {
+    "Title": "Spider-Man 2",
+    "Year": "2004",
+    "Rated": "PG-13",
+    "Released": "30 Jun 2004",
+    "Runtime": "127 min",
+    "Genre": "Action, Adventure, Sci-Fi",
+    "Director": "Sam Raimi",
+    "Writer": "Alvin Sargent",
+    "Actors": "Tobey Maguire, Kirsten Dunst, Alfred Molina",
+    "Plot": "Peter Parker is beset with troubles in his failing personal life as he battles a brilliant scientist named Doctor Otto Octavius, who becomes Doctor Octopus, after an accident causes him to bond psychically with mechanical tentacles that do his bidding.",
+    "Language": "English, Russian, Chinese",
+    "Country": "USA",
+    "Awards": "Won 1 Oscar. Another 23 wins & 56 nominations.",
+    "Poster": "https://www.themoviedb.org/t/p/original/myvj6Slsv3wWtDKKS2IOmbqBTCa.jpg",
+    "Trailer": "https://www.youtube.com/embed/vcfcrz5DpN0",
+    "Rating": 4
+  },
+  {
+    "Title": "Spider-Man 3",
+    "Year": "2007",
+    "Rated": "PG-13",
+    "Released": "04 May 2007",
+    "Runtime": "139 min",
+    "Genre": "Action, Adventure, Sci-Fi",
+    "Director": "Sam Raimi",
+    "Writer": "Sam Raimi, Ivan Raimi",
+    "Actors": "Tobey Maguire, Kirsten Dunst, James Franco",
+    "Plot": "A strange black entity from another world bonds with Peter Parker and causes inner turmoil as he contends with new villains, temptations, and revenge.",
+    "Language": "English, French",
+    "Country": "USA",
+    "Awards": "Nominated for 1 Oscar. Another 3 wins & 34 nominations.",
+    "Poster": "https://www.themoviedb.org/t/p/original/fUZyFTovKMauA1zq9xDe6dmidRv.jpg",
+    "Trailer": "https://www.youtube.com/embed/9GkUIFG_Nyw",
+    "Rating": 3
+  },
+  {
+    "Title": "The Amazing Spider-Man",
+    "Year": "2012",
+    "Rated": "PG-13",
+    "Released": "03 Jul 2012",
+    "Runtime": "136 min",
+    "Genre": "Action, Adventure, Sci-Fi",
+    "Director": "Marc Webb",
+    "Writer": "James Vanderbilt, Alvin Sargent, Steve Kloves",
+    "Actors": "Andrew Garfield, Emma Stone, Rhys Ifans",
+    "Plot": "After Peter Parker is bitten by a genetically altered spider, he gains newfound, spider-like powers and ventures out to save the city from the machinations of a mysterious reptilian foe.",
+    "Language": "English",
+    "Country": "USA",
+    "Awards": "2 wins & 31 nominations.",
+    "Poster": "https://www.themoviedb.org/t/p/original/jIfkQNARYyERqRAq1p1c8xgePp4.jpg",
+    "Trailer": "https://www.youtube.com/embed/-tnxzJ0SSOw",
+    "Rating": 4
+  },
+  {
+    "Title": "The Amazing Spider-Man 2",
+    "Year": "2014",
+    "Rated": "PG-13",
+    "Released": "02 May 2014",
+    "Runtime": "142 min",
+    "Genre": "Action, Adventure, Sci-Fi",
+    "Director": "Marc Webb",
+    "Writer": "Alex Kurtzman, Roberto Orci, Jeff Pinkner",
+    "Actors": "Andrew Garfield, Emma Stone, Jamie Foxx",
+    "Plot": "When New York is put under siege by Oscorp, it is up to Spider-Man to save the city he swore to protect as well as his loved ones.",
+    "Language": "English",
+    "Country": "USA",
+    "Awards": "2 wins & 31 nominations.",
+    "Poster": "https://www.themoviedb.org/t/p/original/bU7nTmvmy0h3VUP01v1T2imgH6N.jpg",
+    "Trailer": "https://www.youtube.com/embed/DlM2CWNTQ84",
+    "Rating": 3
+  },
+  {
+    "Title": "Spider-Man: Homecoming",
+    "Year": "2017",
+    "Rated": "PG-13",
+    "Released": "07 Jul 2017",
+    "Runtime": "133 min",
+    "Genre": "Action, Adventure, Sci-Fi",
+    "Director": "Jon Watts",
+    "Writer": "Jonathan Goldstein, John Francis Daley",
+    "Actors": "Tom Holland, Michael Keaton, Robert Downey Jr.",
+    "Plot": "Peter Parker balances his life as an ordinary high school student in Queens with his superhero alter-ego Spider-Man and finds himself on the trail of a new menace prowling the skies of New York City.",
+    "Language": "English, Spanish",
+    "Country": "USA",
+    "Awards": "7 wins & 9 nominations.",
+    "Poster": "https://www.themoviedb.org/t/p/original/c24sv2weTHPsmDa7jEMN0m2P3RT.jpg",
+    "Trailer": "https://www.youtube.com/embed/n9DwoQ7HWvI",
+    "Rating": 4
   },
   {
     "Title": "Spider-Man: Into the Spider-Verse",
@@ -184,7 +283,44 @@
     "Country": "USA",
     "Awards": "Won 1 Oscar. Another 80 wins & 80 nominations.",
     "Poster": "https://www.themoviedb.org/t/p/original/3cZn1k8x0bikrDKEy9ZKJ6Vdj30.jpg",
-    "Trailer": "https://www.youtube.com/embed/g4Hbz2jLxvQ"
+    "Trailer": "https://www.youtube.com/embed/g4Hbz2jLxvQ",
+    "Rating": 5
+  },
+  {
+    "Title": "Spider-Man: Far From Home",
+    "Year": "2019",
+    "Rated": "PG-13",
+    "Released": "02 Jul 2019",
+    "Runtime": "129 min",
+    "Genre": "Action, Adventure, Sci-Fi",
+    "Director": "Jon Watts",
+    "Writer": "Chris McKenna, Erik Sommers",
+    "Actors": "Tom Holland, Samuel L. Jackson, Jake Gyllenhaal",
+    "Plot": "Following the events of Avengers: Endgame, Spider-Man must step up to take on new threats in a world that has changed forever.",
+    "Language": "English, Italian, Czech",
+    "Country": "USA",
+    "Awards": "2 wins & 9 nominations.",
+    "Poster": "https://www.themoviedb.org/t/p/original/4q2NNj4S5dG2RLF9CpXsej7yXl.jpg",
+    "Trailer": "https://www.youtube.com/embed/DYYtuKyMtY8",
+    "Rating": 4
+  },
+  {
+    "Title": "Batman Begins",
+    "Year": "2005",
+    "Rated": "PG-13",
+    "Released": "15 Jun 2005",
+    "Runtime": "140 min",
+    "Genre": "Action,Adventure",
+    "Director": "Christopher Nolan",
+    "Writer": "Bob Kane (characters), David S. Goyer (story), Christopher Nolan (screenplay), David S. Goyer (screenplay)",
+    "Actors": "Christian Bale, Michael Caine, Liam Neeson, Katie Holmes",
+    "Plot": "After training with his mentor, Batman begins his fight to free crime-ridden Gotham City from corruption.",
+    "Language": "English, Urdu, Mandarin",
+    "Country": "USA, UK",
+    "Awards": "Nominated for 1 Oscar. Another 15 wins & 72 nominations.",
+    "Poster": "https://www.themoviedb.org/t/p/original/4MpN4kIEqUjW8OPtOQJXlTdHiJV.jpg",
+    "Trailer": "https://www.youtube.com/embed/neY2xVmOfUM",
+    "Rating": 4
   },
   {
     "Title": "The Dark Knight",
@@ -201,7 +337,98 @@
     "Country": "USA, UK",
     "Awards": "Won 2 Oscars. Another 157 wins & 163 nominations.",
     "Poster": "https://www.themoviedb.org/t/p/original/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
-    "Trailer": "https://www.youtube.com/embed/EXeTwQWrcwY"
+    "Trailer": "https://www.youtube.com/embed/EXeTwQWrcwY",
+    "Rating": 5
+  },
+  {
+    "Title": "The Dark Knight Rises",
+    "Year": "2012",
+    "Rated": "PG-13",
+    "Released": "20 Jul 2012",
+    "Runtime": "165 min",
+    "Genre": "Action,Thriller",
+    "Director": "Christopher Nolan",
+    "Writer": "Jonathan Nolan (screenplay), Christopher Nolan (screenplay), Christopher Nolan (story), David S. Goyer (story), Bob Kane (characters)",
+    "Actors": "Christian Bale, Gary Oldman, Tom Hardy, Joseph Gordon-Levitt",
+    "Plot": "Eight years after the Joker's reign of anarchy, Batman, with the help of the enigmatic Catwoman, is forced from his exile to save Gotham City from the brutal guerrilla terrorist Bane.",
+    "Language": "English, Arabic",
+    "Country": "USA, UK",
+    "Awards": "Nominated for 1 BAFTA Film Award. Another 38 wins & 101 nominations.",
+    "Poster": "https://www.themoviedb.org/t/p/original/85cWkCVftiVs0BVey6pxX8uNmLt.jpg",
+    "Trailer": "https://www.youtube.com/embed/GokKUqLcvD8",
+    "Rating": 4
+  },
+  {
+    "Title": "The Avengers",
+    "Year": "2012",
+    "Rated": "PG-13",
+    "Released": "04 May 2012",
+    "Runtime": "143 min",
+    "Genre": "Action,Adventure,Sci-Fi",
+    "Director": "Joss Whedon",
+    "Writer": "Joss Whedon (screenplay), Zak Penn (story), Joss Whedon (story)",
+    "Actors": "Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth",
+    "Plot": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
+    "Language": "English, Russian",
+    "Country": "USA",
+    "Awards": "Nominated for 1 Oscar. Another 38 wins & 79 nominations.",
+    "Poster": "https://www.themoviedb.org/t/p/original/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
+    "Trailer": "https://www.youtube.com/embed/eOrNdBpGMv8",
+    "Rating": 5
+  },
+  {
+    "Title": "Avengers: Age of Ultron",
+    "Year": "2015",
+    "Rated": "PG-13",
+    "Released": "01 May 2015",
+    "Runtime": "141 min",
+    "Genre": "Action,Adventure,Sci-Fi",
+    "Director": "Joss Whedon",
+    "Writer": "Joss Whedon, Stan Lee (based on the Marvel comics by), Jack Kirby (based on the Marvel comics by), Joe Simon (character created by: Captain America), Jack Kirby (character created by: Captain America), Jim Starlin (character created by: Thanos)",
+    "Actors": "Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth",
+    "Plot": "When Tony Stark and Bruce Banner try to jump-start a dormant peacekeeping program called Ultron, things go horribly wrong and it's up to Earth's mightiest heroes to stop the villainous Ultron from enacting his terrible plan.",
+    "Language": "English, Korean",
+    "Country": "USA",
+    "Awards": "8 wins & 50 nominations.",
+    "Poster": "https://image.tmdb.org/t/p/original/4ssDuvEDkSArWEdyBl2X5EHvYKU.jpg",
+    "Trailer": "https://www.youtube.com/embed/JAUoeqvedMo",
+    "Rating": 4
+  },
+  {
+    "Title": "Avengers: Infinity War",
+    "Year": "2018",
+    "Rated": "PG-13",
+    "Released": "27 Apr 2018",
+    "Runtime": "149 min",
+    "Genre": "Action,Adventure,Sci-Fi",
+    "Director": "Anthony Russo, Joe Russo",
+    "Writer": "Christopher Markus (screenplay by), Stephen McFeely (screenplay by), Stan Lee (based on the Marvel comics by), Jack Kirby (based on the Marvel comics by)",
+    "Actors": "Robert Downey Jr., Chris Hemsworth, Mark Ruffalo, Chris Evans",
+    "Plot": "The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.",
+    "Language": "English",
+    "Country": "USA",
+    "Awards": "Nominated for 1 Oscar. Another 46 wins & 75 nominations.",
+    "Poster": "https://www.themoviedb.org/t/p/original/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+    "Trailer": "https://www.youtube.com/embed/6ZfuNTqbHE8",
+    "Rating": 5
+  },
+  {
+    "Title": "Avengers: Endgame",
+    "Year": "2019",
+    "Rated": "PG-13",
+    "Released": "26 Apr 2019",
+    "Runtime": "181 min",
+    "Genre": "Action,Adventure,Drama",
+    "Director": "Anthony Russo, Joe Russo",
+    "Writer": "Christopher Markus, Stephen McFeely",
+    "Actors": "Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth",
+    "Plot": "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
+    "Language": "English, Japanese, Xhosa",
+    "Country": "USA",
+    "Awards": "Won 1 Oscar. Another 71 wins & 114 nominations.",
+    "Poster": "https://www.themoviedb.org/t/p/original/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
+    "Trailer": "https://www.youtube.com/embed/TcMBFSGVi1c",
+    "Rating": 5
   },
   {
     "Title": "The Matrix",
@@ -209,7 +436,7 @@
     "Rated": "R",
     "Released": "31 Mar 1999",
     "Runtime": "136 min",
-    "Genre": "Action, Sci-Fi",
+    "Genre": "Action,Sci-Fi",
     "Director": "Lana Wachowski, Lilly Wachowski",
     "Writer": "Lana Wachowski, Lilly Wachowski",
     "Actors": "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss",
@@ -218,7 +445,8 @@
     "Country": "USA, Australia",
     "Awards": "Won 4 Oscars. Another 37 wins & 51 nominations.",
     "Poster": "https://www.themoviedb.org/t/p/original/Cv6uwxudNU6kDdGwgOJNNxCEWI.jpg",
-    "Trailer": "https://www.youtube.com/embed/m8e-FF8MsqU"
+    "Trailer": "https://www.youtube.com/embed/m8e-FF8MsqU",
+    "Rating": 4
   },
   {
     "Title": "The Matrix Reloaded",
@@ -226,7 +454,7 @@
     "Rated": "R",
     "Released": "15 May 2003",
     "Runtime": "138 min",
-    "Genre": "Action, Sci-Fi",
+    "Genre": "Action,Sci-Fi",
     "Director": "Lana Wachowski, Lilly Wachowski",
     "Writer": "Lana Wachowski, Lilly Wachowski",
     "Actors": "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss",
@@ -235,7 +463,8 @@
     "Country": "USA, Australia",
     "Awards": "Nominated for 2 Oscars. Another 22 wins & 51 nominations.",
     "Poster": "https://www.themoviedb.org/t/p/original/aA5qHS0FbSXO8PxcxUIHbDrJyuh.jpg",
-    "Trailer": "https://www.youtube.com/embed/kYzz0FSgpSU"
+    "Trailer": "https://www.youtube.com/embed/kYzz0FSgpSU",
+    "Rating": 4
   },
   {
     "Title": "The Matrix Revolutions",
@@ -243,7 +472,7 @@
     "Rated": "R",
     "Released": "05 Nov 2003",
     "Runtime": "129 min",
-    "Genre": "Action, Sci-Fi",
+    "Genre": "Action,Sci-Fi",
     "Director": "Lana Wachowski, Lilly Wachowski",
     "Writer": "Lana Wachowski, Lilly Wachowski",
     "Actors": "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss",
@@ -252,6 +481,7 @@
     "Country": "USA, Australia",
     "Awards": "4 wins & 27 nominations.",
     "Poster": "https://www.themoviedb.org/t/p/original/qEWiBXJGXK28jGBAm8oFKKTB0WD.jpg",
-    "Trailer": "https://www.youtube.com/embed/hMbexEPAOQI"
+    "Trailer": "https://www.youtube.com/embed/hMbexEPAOQI",
+    "Rating": 3
   }
 ]
