@@ -12,9 +12,10 @@ function checkLocalStorage() {
     email = document.getElementById('email').value;
     for (var i = 0; i < oldDB.length; i++) {
         localUser[i] = oldDB[i].username;
+        localEmail[i] = oldDB[i].email;
     }
     if (localUser.indexOf(username) >-1 || localEmail.indexOf(email) > -1) {
-        alert('Username or Email are no available!');
+        alert('Username or Email are not available!');
     } else {
         register();
     }
