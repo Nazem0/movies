@@ -1,7 +1,9 @@
 var username;
 var email;
 var user = {};
-var oldDB = JSON.parse(localStorage.getItem('users'));
+var oldDB = [];
+oldDB = JSON.parse(localStorage.getItem('users'))||[];
+console.log(oldDB);
 
 function checkLocalStorage() {
     var localUser = [];
@@ -11,7 +13,7 @@ function checkLocalStorage() {
     for (var i = 0; i < oldDB.length; i++) {
         localUser[i] = oldDB[i].username;
     }
-    if (localUser.indexOf(username) || localEmail.indexOf(email) > -1) {
+    if (localUser.indexOf(username) >-1 || localEmail.indexOf(email) > -1) {
         alert('Username or Email are no available!');
     } else {
         register();
