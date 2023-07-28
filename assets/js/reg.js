@@ -6,15 +6,12 @@ oldDB = JSON.parse(localStorage.getItem('users'))||[];
 console.log(oldDB);
 
 function checkLocalStorage() {
-    var localUser = [];
     var localEmail = [];
-    username = document.getElementById('username').value;
     email = document.getElementById('email').value;
     for (var i = 0; i < oldDB.length; i++) {
-        localUser[i] = oldDB[i].username;
         localEmail[i] = oldDB[i].email;
     }
-    if (localUser.indexOf(username) >-1 || localEmail.indexOf(email) > -1) {
+    if (localEmail.indexOf(email) > -1) {
         alert('Username or Email are not available!');
     } else {
         register();
@@ -26,11 +23,11 @@ function register() {
     if (oldDB) {
         users = oldDB;
     }
-    username = document.getElementById('username').value;
-    email = document.getElementById('email').value;
-    var password = document.getElementById('password').value;
+    let fullName = document.getElementById('username').value;
+    let email = document.getElementById('email').value;
+    let password = document.getElementById('password').value;
     user = {
-        username: username,
+        fullName: fullName,
         email: email,
         password: password,
     };
