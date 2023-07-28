@@ -1,4 +1,4 @@
-var username;
+var fullName;
 var email;
 var user = {};
 var oldDB = [];
@@ -7,7 +7,7 @@ console.log(oldDB);
 
 function checkLocalStorage() {
     var localEmail = [];
-    email = document.getElementById('email').value;
+    email = document.getElementById('email').value.toLowerCase();
     for (var i = 0; i < oldDB.length; i++) {
         localEmail[i] = oldDB[i].email;
     }
@@ -23,8 +23,8 @@ function register() {
     if (oldDB) {
         users = oldDB;
     }
-    let fullName = document.getElementById('fullName').value;
-    let email = document.getElementById('email').value;
+    fullName = document.getElementById('fullName').value;
+    email = document.getElementById('email').value.toLowerCase();
     let password = document.getElementById('password').value;
     user = {
         fullName: fullName,
