@@ -12,8 +12,9 @@ request.onreadystatechange = () => {
       movies = JSON.parse(request.responseText)
       movie = movies[movieID];
       movieContainer.innerHTML += (
-      `<div id="movie">
-         <span class="title">${movie.Title}</span>
+         `<div id="movie">
+         <p class="title"><span>${movie.Title} <span><button id="heartButton" onclick="favourite()"><i class="fa-regular fa-heart"></i></button>
+         </p>
          <div id="player_Info">
             <div id="playerContainer">
                <iframe width="860" height="480" src="${movie.Trailer}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -36,18 +37,19 @@ request.onreadystatechange = () => {
          </div>
       </div>`
       )
-         const rating=document.getElementById('rating');
-         for(let i=0; i<movie.Rating;i++)
-         {
-            rating.innerHTML+=`<i class="fa-solid fa-star" style="color: #ffd700;"></i>`
+      const rating = document.getElementById('rating');
+      for (let i = 0; i < movie.Rating; i++) {
+         rating.innerHTML += `<i class="fa-solid fa-star" style="color: #ffd700;"></i>`
+      }
+      if (movie.Rating < 5) {
+         for (let i = 0; i < (5 - movie.Rating); i++) {
+            rating.innerHTML += `<i class="fa-regular fa-star" style="color: #ffd700;"></i>`
          }
-         if(movie.Rating<5)
-         {
-            for(let i=0; i<(5-movie.Rating);i++)
-            {
-               rating.innerHTML+=`<i class="fa-regular fa-star" style="color: #ffd700;"></i>`
-            }
-         }
-      console.log(movie);
+      }
    }
+}
+
+function favourite()
+{
+   
 }
