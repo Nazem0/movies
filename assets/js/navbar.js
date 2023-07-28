@@ -12,10 +12,7 @@ document.body.insertAdjacentHTML('afterbegin',
                     <li><a href="#contact">Contact</a></li>-->
                 </ul>
                 <div id="filtering">
-                        <input type="text" name="search" id="search" placeholder="Search By Title">
-                        <select name="genre" id="genreFilter">
-                            <option value="">Filter</option>
-                        </select>
+                        
                     </div>
                     <ul type="none">
                     <li><a href="reg.html">Register</a></li>

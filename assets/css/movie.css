@@ -31,6 +31,7 @@
     display: grid;
     grid-template-columns: 1fr 0.5fr;
     align-items: center;
+    gap: 1em;
 }
 
 iframe {
@@ -42,4 +43,11 @@ iframe {
 .title {
     font-size: xxx-large;
     color: white;
+}
+
+@media (max-width: 980px) {
+    #player_Info
+    {
+        grid-template-columns: 1fr;
+    }
 }

@@ -1,3 +1,10 @@
+const filterContainer = document.getElementById('filtering')
+filterContainer.innerHTML = `<input type="text" name="search" id="search" placeholder="Search By Title">
+<select name="genre" id="genreFilter">
+    <option value="">Filter</option>
+</select>
+`
+
 var moviesContainer = document.getElementById('moviesContainer');
 var search = document.getElementById('search');
 var genreFilter = document.getElementById('genreFilter')
@@ -13,6 +20,8 @@ request.onreadystatechange = () => {
     }
 }
 var genres = [];
+
+
 function drawMovies() {
     moviesContainer.innerHTML = "";
     //Show all the movies that it's title starts with the search value
