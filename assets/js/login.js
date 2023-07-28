@@ -1,5 +1,5 @@
 var emailLogin;
-var userLogin;
+var fullNameLogin;
 var check;
 oldDB = JSON.parse(localStorage.getItem('users')) || [];
 
@@ -11,7 +11,7 @@ function checkLocalStorageLogin() {
     for (let i = 0; i < oldDB.length; i++) {
         if (oldDB[i].email == emailLogin && oldDB[i].password == passwordLogin) {
             check = 0;
-            login(oldDB[i].username);
+            login(oldDB[i].fullName);
             break;
         } else {
             check = 1;
@@ -23,9 +23,9 @@ function checkLocalStorageLogin() {
 }
 
 function login(user) {
-    userLogin = user;
+    fullNameLogin = user;
     emailLogin = document.getElementById('emailLogin').value;
-    userObj = { 'email': emailLogin, 'user': userLogin }
+    userObj = { 'email': emailLogin, 'fullName': fullNameLogin }
 
     var userJson = JSON.stringify(userObj);
     sessionStorage.setItem('currentUser', userJson);
