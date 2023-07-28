@@ -23,7 +23,7 @@ function register() {
     if (oldDB) {
         users = oldDB;
     }
-    let fullName = document.getElementById('username').value;
+    let fullName = document.getElementById('fullName').value;
     let email = document.getElementById('email').value;
     let password = document.getElementById('password').value;
     user = {
