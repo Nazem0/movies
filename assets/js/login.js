@@ -33,6 +33,7 @@ function login(user) {
 
 function getCurrentUser() {
     var currentJson = JSON.parse(sessionStorage.getItem('currentUser'));
-    return currentJson.user;
+    return currentJson.fullName;
 }
 
+console.log('login    ' + getCurrentUser());
