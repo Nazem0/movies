@@ -1,9 +1,9 @@
 function getCurrentUser() {
-    var currentJson = JSON.parse(sessionStorage.getItem('currentUser'))|| '';
+    var currentJson = JSON.parse(sessionStorage.getItem('currentUser')) || '';
     return currentJson.fullName;
 }
 
-function logout(){
+function logout() {
     sessionStorage.clear();
     console.log(sessionStorage)
 }
@@ -11,15 +11,14 @@ function logout(){
 const head = document.getElementsByTagName('head')[0];
 head.insertAdjacentHTML('beforeend', `<link rel="stylesheet" href="assets/css/navbar.css">`)
 
-if(getCurrentUser() != null){
+if (getCurrentUser() != null) {
     withName();
-} else{
+} else {
     withoutName();
 }
-function withName ()
-{
+function withName() {
     document.body.insertAdjacentHTML('afterbegin',
-    `
+        `
 <div class="navbar">
                 <ul type="none">
                     <li><a class="active" href="index.html">
@@ -30,20 +29,19 @@ function withName ()
                     <li><a href="#contact">Contact</a></li>-->
                 </ul>
                 <div id="filtering">
-                        
                     </div>
                     <ul type="none">
-                    <li><a href="reg.html">${getCurrentUser()}</a></li>
+                    <li><a href="#">${getCurrentUser()}</a></li>
+                    <li><a href="favourites.html">Favourites</a></li>
                     <li><a href="index.html" onclick="logout()" >Log out</a></li>
                 </ul>
             </div>
 `)
 }
 
-function withoutName()
-{
+function withoutName() {
     document.body.insertAdjacentHTML('afterbegin',
-    `
+        `
 <div class="navbar">
                 <ul type="none">
                     <li><a class="active" href="index.html">

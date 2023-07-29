@@ -1,4 +1,20 @@
+var oldFavDB = JSON.parse(localStorage.getItem('favs')) || [];
+var userFavs= [];
 let movie = "";
+
+var currentEmail = function getCurrentUser() {
+   var currentJson = JSON.parse(sessionStorage.getItem('currentUser'));
+   return currentJson.email;
+}
+
+for (var i = 0; i < oldFavDB.length; i++) {
+   if (oldFavDB[i].currentEmail == currentEmail) {
+      for (let j = 0; j < oldFavDB[i].userFavsDB.length; j++) {
+         userFavs = oldFavDB[i].userFavsDB[j];
+      }
+   }
+}
+
 
 const movieContainer = document.getElementById('movieContainer');
 var urlParams = new URLSearchParams(window.location.search);
@@ -49,7 +65,34 @@ request.onreadystatechange = () => {
    }
 }
 
-function favourite()
-{
-   
+
+
+function checkFavs() {
+   if (userFavs.includes(movieID)) {
+      favourite();
+   } else {
+      unfavourite();
+   }
+}
+
+
+
+function unfavourite() {
+   // array pop id 
+}
+
+
+function favourite() {
+   if (oldFavDB) {
+      favDB = oldFavDB;
+   }
+   userFavs.push(movieID);
+   favUser = {
+      email: `${currentEmail}`,
+      userFavsDB: userFavs,
+   }
+   favDB.push(favUser);
+
+   var json = JSON.stringify(favDB);
+   localStorage.setItem('favs', favDB)
 }
