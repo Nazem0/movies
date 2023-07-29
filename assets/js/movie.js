@@ -26,7 +26,12 @@ request.send()
 request.onreadystatechange = () => {
    if (request.readyState == 4) {
       movies = JSON.parse(request.responseText)
-      movie = movies[movieID];
+      for(var index = 0; index < movies.length; index++) {
+         if(movies[index].ID==movieID)
+         {
+            movie = movies[index]
+         }
+      }
       movieContainer.innerHTML += (
          `<div id="movie">
          <p class="title"><span>${movie.Title} <span><button id="heartButton" onclick="favourite()"><i class="fa-regular fa-heart"></i></button>

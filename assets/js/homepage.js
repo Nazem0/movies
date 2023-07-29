@@ -42,7 +42,7 @@ function drawMovies() {
                     ${movies[i].Genre.split(',').join(', ')}
                 </p>
                 <p><b>Year: </b> ${movies[i].Year}</p>
-                <a href="movie.html?movieID=${i}">
+                <a href="movie.html?movieID=${movies[i].ID}">
                 <i class="fa-solid fa-circle-play fa-beat-fade fa-xl"></i>
                 </a>
             </div>
