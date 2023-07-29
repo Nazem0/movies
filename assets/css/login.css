@@ -37,7 +37,6 @@ form .input-box input{
   font-size: 17px;
   font-weight: 400;
   height: 32px;
-  margin: 18px;
   color: #400e97;
   border:#f5b3b3;
   border-radius: 8px;
@@ -48,4 +47,14 @@ form .input-box input{
 }
 .reg input:hover{
   background: #f5b3b3;
+}
+
+form input[type="submit"]{
+  width: 100%;
+} 
+
+form input
+{
+  border: none;
+  outline: none;
 }

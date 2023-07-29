@@ -1,22 +1,18 @@
-function getCurrentUser() {
-    var currentJson = JSON.parse(sessionStorage.getItem('currentUser')) || '';
-    return currentJson.fullName;
-}
+// function getCurrentUser() {
+//     var currentJson = JSON.parse(sessionStorage.getItem('currentUser')) || '';
+//     return currentJson.fullName;
+// }
+const head = document.getElementsByTagName('head')[0];
+head.insertAdjacentHTML('beforeend', `<link rel="stylesheet" href="assets/css/navbar.css">`)
+
+var currentUser = JSON.parse(sessionStorage.getItem('currentUser'))
 
 function logout() {
     sessionStorage.clear();
     console.log(sessionStorage)
 }
 
-const head = document.getElementsByTagName('head')[0];
-head.insertAdjacentHTML('beforeend', `<link rel="stylesheet" href="assets/css/navbar.css">`)
-
-if (getCurrentUser() != null) {
-    withName();
-} else {
-    withoutName();
-}
-function withName() {
+if (currentUser) {
     document.body.insertAdjacentHTML('afterbegin',
         `
 <div class="navbar">
@@ -31,15 +27,12 @@ function withName() {
                 <div id="filtering">
                     </div>
                     <ul type="none">
-                    <li><a href="#">${getCurrentUser()}</a></li>
-                    <li><a href="favourites.html">Favourites</a></li>
+                    <li><a href="favourites.html">${currentUser.fullName}</a></li>
                     <li><a href="index.html" onclick="logout()" >Log out</a></li>
                 </ul>
             </div>
 `)
-}
-
-function withoutName() {
+} else {
     document.body.insertAdjacentHTML('afterbegin',
         `
 <div class="navbar">

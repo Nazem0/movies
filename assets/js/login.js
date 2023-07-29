@@ -30,10 +30,3 @@ function login(user) {
     var userJson = JSON.stringify(userObj);
     sessionStorage.setItem('currentUser', userJson);
 }
-
-function getCurrentUser() {
-    var currentJson = JSON.parse(sessionStorage.getItem('currentUser'));
-    return currentJson.fullName;
-}
-
-console.log('login    ' + getCurrentUser());
