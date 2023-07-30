@@ -1,20 +1,20 @@
 var oldFavDB = JSON.parse(localStorage.getItem('favs')) || [];
 var userFavs= [];
 let movie = "";
+var currentJson = JSON.parse(sessionStorage.getItem('currentUser'));
 
 var currentEmail = getCurrentUser();
 function getCurrentUser() {
-   var currentJson = JSON.parse(sessionStorage.getItem('currentUser'));
    if(currentJson)
    return currentJson.email;
    else 
-   return
+   throw alert('YOU MUST LOGIN FIRST')
 }
 
 for (var i = 0; i < oldFavDB.length; i++) {
    if (oldFavDB[i].currentEmail == currentEmail) {
       for (let j = 0; j < oldFavDB[i].userFavsDB.length; j++) {
-         userFavs = oldFavDB[i].userFavsDB[j];
+         userFavs.push(oldFavDB[i].userFavsDB[j]);
       }
    }
 }
@@ -96,10 +96,24 @@ function favourite() {
       favDB = oldFavDB;
    }
    userFavs.push(movieID);
+   // for(let key in oldFavDB)
+   // {
+   //    console.log(key);
+   // }
+   for (let value of oldFavDB)
+   {
+      if(currentJson.email==value.email)
+      {
+         value.userFavsDB.push(movieID);
+      }
+   }
    favUser = {
       email: `${currentEmail}`,
       userFavsDB: userFavs,
    }
+   console.log(oldFavDB);
+   console.log(favDB);
+   console.log(favUser);
    favDB.push(favUser);
 
    var json = JSON.stringify(favDB);

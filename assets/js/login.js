@@ -18,7 +18,8 @@ function checkLocalStorageLogin() {
         }
     }
     if (check == 1) {
-        alert('Email or password are not incorrect!');
+        document.body.insertAdjacentHTML('afterbegin',`<div id="warning"><h2>Invalid Credentials</h2>
+        <p>Email or Password is Incorrect</p></div>`)
     }
 }
 
@@ -29,4 +30,5 @@ function login(user) {
 
     var userJson = JSON.stringify(userObj);
     sessionStorage.setItem('currentUser', userJson);
+    location.assign('/')
 }

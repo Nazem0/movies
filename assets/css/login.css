@@ -14,14 +14,12 @@
   font-weight: 600;
   color: #f5b3b3;
 }
-.main form{
-  margin-top: 30px;
-}
-.main form .input-box{
+
+.main .input-box{
   height: 52px;
   margin: 18px 0;
 }
-form .input-box input{
+ .input-box input{
   height: 100%;
   width: 100%;
   outline: none;
@@ -49,12 +47,25 @@ form .input-box input{
   background: #f5b3b3;
 }
 
-form input[type="submit"]{
+ input[type="submit"]{
   width: 100%;
 } 
 
-form input
+ input
 {
   border: none;
   outline: none;
+}
+
+#warning
+{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin:1rem 0px;
+  color: rgb(199, 0, 0);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
 }
