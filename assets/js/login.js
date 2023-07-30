@@ -5,7 +5,7 @@ oldDB = JSON.parse(localStorage.getItem('users')) || [];
 
 
 function checkLocalStorageLogin() {
-    emailLogin = document.getElementById('emailLogin').value;
+    emailLogin = document.getElementById('emailLogin').value.toLowerCase();
     var passwordLogin = document.getElementById('passwordLogin').value;
 
     for (let i = 0; i < oldDB.length; i++) {
@@ -30,5 +30,5 @@ function login(user) {
 
     var userJson = JSON.stringify(userObj);
     sessionStorage.setItem('currentUser', userJson);
-    location.assign('/')
+    location.assign('index.html')
 }
