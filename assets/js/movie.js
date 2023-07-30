@@ -2,9 +2,13 @@ var oldFavDB = JSON.parse(localStorage.getItem('favs')) || [];
 var userFavs= [];
 let movie = "";
 
-var currentEmail = function getCurrentUser() {
+var currentEmail = getCurrentUser();
+function getCurrentUser() {
    var currentJson = JSON.parse(sessionStorage.getItem('currentUser'));
+   if(currentJson)
    return currentJson.email;
+   else 
+   return
 }
 
 for (var i = 0; i < oldFavDB.length; i++) {
@@ -99,5 +103,5 @@ function favourite() {
    favDB.push(favUser);
 
    var json = JSON.stringify(favDB);
-   localStorage.setItem('favs', favDB)
+   localStorage.setItem('favs', json)
 }

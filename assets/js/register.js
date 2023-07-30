@@ -36,17 +36,16 @@
 //     localStorage.setItem('users', json);
 // }
 const emailRE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const nameRE = /^[A-Za-z]+$/;
+const fullNameRE = /^[A-Za-z]+( [A-Za-z]+)*$/;
 var user = {};
-var oldDB = [];
-oldDB = JSON.parse(localStorage.getItem('users')) || [];
+// var oldDB = [];
+var oldDB = JSON.parse(localStorage.getItem('users')) || [];
 
 function checkLocalStorage() {
     let fullName = document.getElementById('fullName').value;
     let email = document.getElementById('email').value.toLowerCase();
     let password = document.getElementById('password').value;
-    if (nameRE.test(fullName)&&emailRE.test(email)&&password.length>=8) {
-        if(document.getElementById('warning'))
+    if (fullNameRE.test(fullName)&&emailRE.test(email)&&password.length>=8) {
         var localEmail = [];
         email = document.getElementById('email').value.toLowerCase();
         for (var i = 0; i < oldDB.length; i++) {
@@ -79,4 +78,5 @@ function register(fullName, email, password) {
     users.push(user);
     var json = JSON.stringify(users);
     localStorage.setItem('users', json);
+    location.assign('login.html')
 }
