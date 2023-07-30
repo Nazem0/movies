@@ -1,3 +1,8 @@
+*
+{
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+
+}
 #movieContainer {
     background-color: rgba(0, 0, 0, 0.2);
     width: 100%;
@@ -9,7 +14,6 @@
     padding-bottom: 1em;
     margin: auto;
     width: 80%;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 
 }
 
@@ -50,6 +54,11 @@ iframe {
     color: white;
 }
 
+#titleFavourite
+{
+    display: flex;
+    justify-content: space-between;
+}
 #heartButton {
     background-color: transparent;
     border: none;

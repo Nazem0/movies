@@ -1,9 +1,29 @@
+var oldFavDB = JSON.parse(localStorage.getItem('favs')) || [];
+var userFavs = [];
 let movie = "";
+
+var currentEmail = getCurrentUser();
+function getCurrentUser() {
+   var currentJson = JSON.parse(sessionStorage.getItem('currentUser'));
+   if (currentJson)
+      return currentJson.email;
+   else
+      throw alert('YOU MUST LOGIN FIRST')
+}
+
+for (var i = 0; i < oldFavDB.length; i++) {
+   if (oldFavDB[i].currentEmail == currentEmail) {
+      for (let j = 0; j < oldFavDB[i].userFavsDB.length; j++) {
+         userFavs.push(oldFavDB[i].userFavsDB[j]);
+      }
+   }
+}
+
+
 const movieContainer = document.getElementById('movieContainer');
 var urlParams = new URLSearchParams(window.location.search);
 var movieID = urlParams.get('movieID');
 var movies = "";
-
 var request = new XMLHttpRequest();
 request.open('get', 'assets/data/movies.json')
 request.send()
@@ -17,7 +37,7 @@ request.onreadystatechange = () => {
       }
       movieContainer.innerHTML += (
          `<div id="movie">
-         <p class="title" id="titleFavourite"><span>${movie.Title} </span><button id="heartButton" onclick="checkFavs()"></button>
+         <p class="title"><span>${movie.Title} <span><button id="heartButton" onclick="favourite()"><i class="fa-regular fa-heart"></i></button>
          </p>
          <div id="player_Info">
             <div id="playerContainer">
@@ -41,13 +61,6 @@ request.onreadystatechange = () => {
          </div>
       </div>`
       )
-      const heartButton = document.getElementById('heartButton');
-      if (oldFavDB.includes(movieID)) {
-         heartButton.innerHTML = `<i class="fa-solid fa-heart" style="color: #ff0064;"></i>`
-      }
-      else {
-         heartButton.innerHTML = `<i class="fa-regular fa-heart"></i>`
-      }
       const rating = document.getElementById('rating');
       for (let i = 0; i < movie.Rating; i++) {
          rating.innerHTML += `<i class="fa-solid fa-star" style="color: #ffd700;"></i>`
@@ -60,39 +73,34 @@ request.onreadystatechange = () => {
    }
 }
 
-function getCurrentUser() {
-   var currentJson = JSON.parse(sessionStorage.getItem('currentUser'));
-   if (currentJson)
-      return currentJson.email;
-   else
-      throw alert('YOU MUST LOGIN FIRST')
-}
 
-
-var currentEmail = getCurrentUser();
-var oldFavDB = JSON.parse(localStorage.getItem(currentEmail)) || [];
 
 function checkFavs() {
-   oldFavDB = JSON.parse(localStorage.getItem(currentEmail)) || [];
-   if (oldFavDB.includes(movieID)) {
-      unfavourite(movieID);
+   if (userFavs.includes(movieID)) {
+      favourite();
    } else {
-      favourite(movieID);
+      unfavourite();
    }
 }
 
 
 
-function unfavourite(movieID) {
-   oldFavDB.splice(oldFavDB.indexOf(movieID), 1)
-   localStorage.setItem(currentEmail, JSON.stringify(oldFavDB))
-   heartButton.innerHTML = `<i class="fa-regular fa-heart"></i>`
-
+function unfavourite() {
+   // array pop id 
 }
 
 
 function favourite() {
-   oldFavDB.push(movieID);
-   localStorage.setItem(currentEmail, JSON.stringify(oldFavDB))
-   heartButton.innerHTML = `<i class="fa-solid fa-heart" style="color: #ff0064;"></i>`
+   if (oldFavDB) {
+      favDB = oldFavDB;
+   }
+   userFavs.push(movieID);
+   favUser = {
+      email: `${currentEmail}`,
+      userFavsDB: userFavs,
+   }
+   favDB.push(favUser);
+
+   var json = JSON.stringify(favDB);
+   localStorage.setItem('favs', json)
 }
