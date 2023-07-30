@@ -1,4 +1,4 @@
-.navbar {
+nav{
     background: linear-gradient( rgba(20, 20, 20,1) 0% , rgba(20, 20, 100,0.8) 100%);
     overflow: hidden;
     width: 100%;
@@ -10,22 +10,18 @@
     position: fixed;
     top:0;
     z-index:1;
+    padding: 0 1em;
 }
 
-
-.navbar>ul {
-    width: fit-content;
-    display: flex;
-}
 
 /* Style the links inside the navigation bar */
-.navbar>ul>li {
+nav a {
     padding: 1em;
  
 }
 
 /* Change the color of links on hover */
-.navbar>ul>li:hover {
+nav a:hover {
     background-color: rgba(100,0,255,0.4);
 }
 

@@ -60,16 +60,16 @@ request.onreadystatechange = () => {
    }
 }
 
-function getCurrentUser() {
-   var currentJson = JSON.parse(sessionStorage.getItem('currentUser'));
-   if (currentJson)
-      return currentJson.email;
-   else
-      throw alert('YOU MUST LOGIN FIRST')
-}
+// function getCurrentUser() {
+//    var currentJson = JSON.parse(sessionStorage.getItem('currentUser'));
+//    if (currentJson)
+//       return currentJson.email;
+//    else
+//       throw alert('YOU MUST LOGIN FIRST')
+// }
 
 
-var currentEmail = getCurrentUser();
+var currentEmail = JSON.parse(sessionStorage.getItem('currentUser'));
 var oldFavDB = JSON.parse(localStorage.getItem(currentEmail)) || [];
 
 function checkFavs() {

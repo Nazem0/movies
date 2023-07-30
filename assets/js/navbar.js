@@ -15,39 +15,32 @@ function logout() {
 if (currentUser) {
     document.body.insertAdjacentHTML('afterbegin',
         `
-<div class="navbar">
-                <ul type="none">
-                    <li><a class="active" href="index.html">
-                    <i class="fa-solid fa-house"></i>
-                        Home
-                        </a></li>
-                </ul>
-                <div id="filtering">
-                    </div>
-                    <ul type="none">
-                    <li><a href="favourites.html">${currentUser.fullName}</a></li>
-                    <li><a href="index.html" onclick="logout()" >Log out</a></li>
-                </ul>
-            </div>
+<nav>
+    <a href="index.html">
+        <i class="fa-solid fa-house"></i>
+        Home
+    </a>
+    <div id="filtering"></div>
+    <div>
+        <a href="favourites.html">${currentUser.fullName}</a>
+        <a href="index.html" onclick="logout()" >Log out</a>
+    </div>
+</nav>
 `)
 } else {
     document.body.insertAdjacentHTML('afterbegin',
         `
-<div class="navbar">
-                <ul type="none">
-                    <li><a class="active" href="index.html">
-                    <i class="fa-solid fa-house"></i>
-                        Home
-                        </a></li>
-                </ul>
-                <div id="filtering">
-                        
-                    </div>
-                    <ul type="none">
-                    <li><a href="register.html">Register</a></li>
-                    <li><a href="login.html">Login</a></li>
-                </ul>
-            </div>
+<nav>
+    <a class="active" href="index.html">
+        <i class="fa-solid fa-house"></i>
+        Home
+    </a>
+    <div id="filtering"></div>
+    <div>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+    </div>
+</nav>
 `)
 }
 
