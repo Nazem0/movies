@@ -1,7 +1,7 @@
 let movie = "";
 const movieContainer = document.getElementById('movieContainer');
 var urlParams = new URLSearchParams(window.location.search);
-var movieID = urlParams.get('movieID');
+var movieID = parseInt(urlParams.get('movieID'));
 var movies = "";
 
 var request = new XMLHttpRequest();
