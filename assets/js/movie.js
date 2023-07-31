@@ -10,32 +10,27 @@ request.send()
 request.onreadystatechange = () => {
    if (request.readyState == 4) {
       movies = JSON.parse(request.responseText)
-      for (var index = 0; index < movies.length; index++) {
-         if (movies[index].ID == movieID) {
-            movie = movies[index]
-         }
-      }
       movieContainer.innerHTML += (
          `<div id="movie">
-         <p class="title" id="titleFavourite"><span>${movie.Title} </span><button id="heartButton" onclick="checkFavs()"></button>
+         <p class="title" id="titleFavourite"><span>${movies[movieID].Title} </span><button id="heartButton" onclick="checkFavs()"></button>
          </p>
          <div id="player_Info">
             <div id="playerContainer">
-               <iframe width="860" height="480" src="${movie.Trailer}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+               <iframe width="860" height="480" src="${movies[movieID].Trailer}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div id="movieDetails">
             <span class="title">Description</span>
             <hr>
-               <p><b>Actors:</b> ${movie.Actors}</p>
-               <p><b>Awards:</b> ${movie.Awards}</p>
-               <p><b>Country:</b> ${movie.Country}</p>
-               <p><b>Director:</b> ${movie.Director}</p>
-               <p><b>Plot:</b><p>${movie.Plot}</p></p>
-               <p><b>Rated:</b> ${movie.Rated}</p>
-               <p><b>Released:</b> ${movie.Released}</p>
-               <p><b>Runtime:</b> ${movie.Runtime}</p>
-               <p><b>Language:</b> ${movie.Language}</p>
-               <p><b>Year:</b> ${movie.Year}</p>
+               <p><b>Actors:</b> ${movies[movieID].Actors}</p>
+               <p><b>Awards:</b> ${movies[movieID].Awards}</p>
+               <p><b>Country:</b> ${movies[movieID].Country}</p>
+               <p><b>Director:</b> ${movies[movieID].Director}</p>
+               <p><b>Plot:</b><p>${movies[movieID].Plot}</p></p>
+               <p><b>Rated:</b> ${movies[movieID].Rated}</p>
+               <p><b>Released:</b> ${movies[movieID].Released}</p>
+               <p><b>Runtime:</b> ${movies[movieID].Runtime}</p>
+               <p><b>Language:</b> ${movies[movieID].Language}</p>
+               <p><b>Year:</b> ${movies[movieID].Year}</p>
                <p id="rating"><b>Rating: </b></p>
             </div>
          </div>
@@ -49,11 +44,11 @@ request.onreadystatechange = () => {
          heartButton.innerHTML = `<i class="fa-regular fa-heart"></i>`
       }
       const rating = document.getElementById('rating');
-      for (let i = 0; i < movie.Rating; i++) {
+      for (let i = 0; i < movies[movieID].Rating; i++) {
          rating.innerHTML += `<i class="fa-solid fa-star" style="color: #ffd700;"></i>`
       }
-      if (movie.Rating < 5) {
-         for (let i = 0; i < (5 - movie.Rating); i++) {
+      if (movies[movieID].Rating < 5) {
+         for (let i = 0; i < (5 - movies[movieID].Rating); i++) {
             rating.innerHTML += `<i class="fa-regular fa-star" style="color: #ffd700;"></i>`
          }
       }

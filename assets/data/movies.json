@@ -1,5 +1,24 @@
 [
   {
+    "ID": 0,
+    "Title": "A Nightmare on Elm Street",
+    "Year": "2010",
+    "Rated": "R",
+    "Released": "30 Apr 2010",
+    "Runtime": "95 min",
+    "Genre": "Horror",
+    "Director": "Samuel Bayer",
+    "Writer": "Wesley Strick, Eric Heisserer (screenplay), Wes Craven (characters)",
+    "Actors": "Jackie Earle Haley, Rooney Mara, Kyle Gallner",
+    "Plot": "In the dreams of his victims, a spectral child murderer stalks the children of the members of the lynch mob that killed him.",
+    "Language": "English",
+    "Country": "USA",
+    "Awards": "Nominated for 1 Academy Award (Oscar) for Best Makeup. Additionally, the movie won various other awards, securing 80 wins and garnering 121 nominations from different award ceremonies and festivals.",
+    "Poster": "https://www.themoviedb.org/t/p/original/t8YEQvPlvRAt9UamhwRC0zsLkCk.jpg",
+    "Trailer": "https://www.youtube.com/embed/CIyLNm_-qH4",
+    "Rating": 3
+  },  
+  {
     "ID": 1,
     "Title": "Avatar",
     "Year": "2009",
