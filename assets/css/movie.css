@@ -64,14 +64,37 @@ iframe {
     border: none;
     outline: none;
     padding: 5px;
+    position: relative;
 }
-
-#heartButton>i:hover {
-    color: red;
+#heartButton>i
+{
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+}
+#heartButton>i:active {
+    color: #ff0064;
+    animation: dancing_heart 1s infinite ease-in-out;
 }
 
 @media (max-width: 980px) {
     #player_Info {
         grid-template-columns: 1fr;
     }
+}
+
+@keyframes dancing_heart {
+    0%
+    {
+        /* font-size: 100%; */
+        scale: 1;
+    }
+    50%
+    {
+        scale: 1.2;
+    }
+    100%
+    {
+        scale:1;
+    }
+    
 }
