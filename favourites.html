@@ -8,19 +8,28 @@
     <title>Favourites</title>
     <link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
-    <link rel="stylesheet" href="assets/css/homepage.css">
+    <link rel="stylesheet" href="assets/css/favourites.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <table id="moviesContainer">
-            <tr>
-                <th>Name</th>
-                <th>Plot</th>
-            </tr>
-    </table>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Poster</th>
+                    <th>Title</th>
+                    <th>Genre</th>
+                    <th>Year</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="moviesContainer"></tbody>
+        </table>
+    </main>
     <script src="assets/js/navbar.js"></script>
     <script src="assets/js/favourites.js"></script>
 </body>

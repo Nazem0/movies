@@ -42,26 +42,21 @@
     margin-left:0.5em;
     margin-right:0.5em;
 }
-.movie>div>*
-{
-    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-
-}
-
 
 #filtering {
     display: flex;
     margin: auto;
     flex-grow: 1;
-    
 }
 
-#filtering>* {
+#filtering * {
+    text-shadow: none;
     border: none;
     outline: none;
     text-align: center;
     padding: 5px;
     background: rgba(255,255,255,0.8);
+    color: black !important;
 }
 
 #search {

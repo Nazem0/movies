@@ -36,16 +36,17 @@ var genres = [];
 
 
 function drawMovies() {
-    moviesContainer.innerHTML = "";
+    // moviesContainer.innerHTML = "";
     //Show all the movies that it's title starts with the search value
     for (var i = 0; i < movies.length; i++) {
         if (oldFavDB.includes(movies[i].ID)) {
             if (movies[i].Genre.indexOf(genreFilter.value) != -1 && movies[i].Title.toLowerCase().indexOf(search.value.toLowerCase()) == 0) {
                 genreSplit = movies[i].Genre.split(',');
                 moviesContainer.innerHTML += `<tr>
-                <td><img src="${movies[i].Poster}" style="width:100px;"></td>
-                <td>${movies[i].Title}</td>
-                <td>${movies[i].Title}</td>
+                <td>${i}</td>
+                <td><img src="${movies[i].Poster}" style="width:100px;"></td> <td>${movies[i].Title}</td>
+                <td>${movies[i].Genre}</td> <td>${movies[i].Year}</td>
+                <td><button onclick="unfavourite()">unfavourite</button></td>
                 </tr>`;
                 for (var j = 0; j < genreSplit.length; j++) {
                     if (!genres.includes(genreSplit[j])) {
