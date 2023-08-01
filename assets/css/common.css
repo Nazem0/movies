@@ -30,6 +30,11 @@ main
     align-items: center;
 }
 a {
-    text-decoration: none;
+    all:unset;
     color: currentColor;
+    cursor:pointer;
+}
+
+i{
+    cursor: pointer;
 }

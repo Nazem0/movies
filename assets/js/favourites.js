@@ -36,17 +36,20 @@ var genres = [];
 
 
 function drawMovies() {
-    // moviesContainer.innerHTML = "";
+    favourites=1;
+    moviesContainer.innerHTML = "";
     //Show all the movies that it's title starts with the search value
     for (var i = 0; i < movies.length; i++) {
         if (oldFavDB.includes(movies[i].ID)) {
             if (movies[i].Genre.indexOf(genreFilter.value) != -1 && movies[i].Title.toLowerCase().indexOf(search.value.toLowerCase()) == 0) {
                 genreSplit = movies[i].Genre.split(',');
                 moviesContainer.innerHTML += `<tr>
-                <td>${i}</td>
-                <td><img src="${movies[i].Poster}" style="width:100px;"></td> <td>${movies[i].Title}</td>
-                <td>${movies[i].Genre}</td> <td>${movies[i].Year}</td>
-                <td><button onclick="unfavourite()">unfavourite</button></td>
+                <td><a href="movie.html?movieID=${movies[i].ID}"><img src="${movies[i].Poster}"></a></td>
+                <td><a href="movie.html?movieID=${movies[i].ID}">${movies[i].Title}</a></td>
+                <td>${movies[i].Genre}</td>
+                <td>${movies[i].Year}</td>
+                <td>${movies[i].Rating}</td>
+                <td><i onclick="unfavourite(${movies[i].ID})" class="heartButton fa-solid fa-heart" style="color: #ff0064;"></i></td>
                 </tr>`;
                 for (var j = 0; j < genreSplit.length; j++) {
                     if (!genres.includes(genreSplit[j])) {
@@ -62,23 +65,14 @@ function drawMovies() {
         if (oldFavDB.includes(movies[i].ID)) {
             if (movies[i].Genre.indexOf(genreFilter.value) != -1 && movies[i].Title.toLowerCase().indexOf(search.value.toLowerCase()) > 0) {
                 genreSplit = movies[i].Genre.split(',');
-                moviesContainer.innerHTML += `
-        <div class="movie">
-            <img src=${movies[i].Poster}>
-            <div>
-                <h2>${movies[i].Title}</h2>
-                <p>
-                    <b>Genre: </b>
-                    ${movies[i].Genre.split(',').join(', ')}
-                </p>
-                <p><b>Year: </b> ${movies[i].Year}</p>
-                <a href="movie.html?movieID=${i}">
-                <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9V344c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/>
-                </svg>
-                </a>
-                </div>
-            
-        </div>`;
+                moviesContainer.innerHTML += `<tr>
+                <td><img src="${movies[i].Poster}" style="width:100px;"></td>
+                <td><a href="movie.html?movieID=${movies[i].ID}>${movies[i].Title}</a></td>
+                <td>${movies[i].Genre}</td>
+                <td>${movies[i].Year}</td>
+                <td>${movies[i].Rating}</td>
+                <td><button onclick="unfavourite(${movies[i].ID})"><i class="fa-solid fa-heart"></i></button></td>
+                </tr>`;
                 for (var j = 0; j < genreSplit.length; j++) {
                     if (!genres.includes(genreSplit[j])) {
                         genres.push(genreSplit[j]);
@@ -98,7 +92,11 @@ search.addEventListener('keyup', () => {
     drawMovies();
 }
 );
-
+function unfavourite(movieID) {
+    oldFavDB.splice(oldFavDB.indexOf(movieID), 1)
+    localStorage.setItem(currentEmail, JSON.stringify(oldFavDB)) 
+    drawMovies();
+ }
 /*
 -------------->GOING TO NEED THIS TO GET SPECIFIC URL PARAMETER<--------------
 // Create urlParams query string
