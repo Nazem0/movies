@@ -64,7 +64,7 @@ request.onreadystatechange = () => {
 // }
 
 
-var currentEmail = JSON.parse(sessionStorage.getItem('currentUser')).email;
+var currentEmail = JSON.parse(sessionStorage.getItem('currentUser')).email || "";
 var oldFavDB = JSON.parse(localStorage.getItem(currentEmail)) || [];
 
 function checkFavs() {
