@@ -1,3 +1,7 @@
+body
+{
+    min-height: 100vh;
+}
 #movieContainer {
     background-color: rgba(0, 0, 0, 0.2);
     width: 100%;
@@ -9,7 +13,6 @@
     padding-bottom: 1em;
     margin: auto;
     width: 80%;
-
 }
 
 #movieDetails {
