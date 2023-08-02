@@ -62,9 +62,12 @@ request.onreadystatechange = () => {
 //    else
 //       throw alert('YOU MUST LOGIN FIRST')
 // }
-
-
-var currentEmail = JSON.parse(sessionStorage.getItem('currentUser')).email || "";
+var currentEmail="";
+if(JSON.parse(sessionStorage.getItem('currentUser')).email)
+{
+   currentEmail = JSON.parse(sessionStorage.getItem('currentUser')).email
+}
+// var currentEmail = JSON.parse(sessionStorage.getItem('currentUser')).email || "";
 var oldFavDB = JSON.parse(localStorage.getItem(currentEmail)) || [];
 
 function checkFavs() {
