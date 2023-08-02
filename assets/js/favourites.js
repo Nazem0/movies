@@ -46,7 +46,7 @@ function drawMovies() {
                 moviesContainer.innerHTML += `<tr>
                 <td><a href="movie.html?movieID=${movies[i].ID}"><img src="${movies[i].Poster}"></a></td>
                 <td><a href="movie.html?movieID=${movies[i].ID}">${movies[i].Title}</a></td>
-                <td>${movies[i].Genre}</td>
+                <td>${movies[i].Genre.split(',').join(', ')}</td>
                 <td>${movies[i].Year}</td>
                 <td>${movies[i].Rating}</td>
                 <td><i onclick="unfavourite(${movies[i].ID})" class="heartButton fa-solid fa-heart" style="color: #ff0064;"></i></td>
@@ -68,7 +68,7 @@ function drawMovies() {
                 moviesContainer.innerHTML += `<tr>
                 <td><img src="${movies[i].Poster}" style="width:100px;"></td>
                 <td><a href="movie.html?movieID=${movies[i].ID}>${movies[i].Title}</a></td>
-                <td>${movies[i].Genre}</td>
+                <td>${movies[i].Genre.split(',').join(', ')}</td>
                 <td>${movies[i].Year}</td>
                 <td>${movies[i].Rating}</td>
                 <td><button onclick="unfavourite(${movies[i].ID})"><i class="fa-solid fa-heart"></i></button></td>
