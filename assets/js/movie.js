@@ -63,7 +63,7 @@ request.onreadystatechange = () => {
 //       throw alert('YOU MUST LOGIN FIRST')
 // }
 var currentEmail="";
-if(JSON.parse(sessionStorage.getItem('currentUser')).email)
+if(JSON.parse(sessionStorage.getItem('currentUser')))
 {
    currentEmail = JSON.parse(sessionStorage.getItem('currentUser')).email
 }
