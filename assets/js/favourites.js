@@ -36,7 +36,6 @@ var genres = [];
 
 
 function drawMovies() {
-    favourites=1;
     moviesContainer.innerHTML = "";
     //Show all the movies that it's title starts with the search value
     for (var i = 0; i < movies.length; i++) {
