@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="assets/css/add.css">
+</head>
+
+<body>
+    <form action="http://localhost/movies/backend/createMovie.php" method="post">
+
+        <h1>Add a Movie</h1>
+        <div>
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" class="w-100">
+        </div>
+        <br>
+        <div>
+            <label for="year">Year:</label>
+            <input type="number" min="1900" id="year" name="year" class="w-100">
+        </div>
+        <br>
+        <div>
+            <label>Rated:</label>
+            <br>
+            <div id="rated">
+
+            </div>
+        </div>
+        <br>
+        <div>
+            <label for="released">Released:</label>
+            <input type="text" id="released" name="released" class="w-100">
+        </div>
+        <br>
+        <div>
+            <label for="runtime">Runtime:</label>
+            <input type="text" id="runtime" name="runtime" class="w-100">
+        </div>
+        <br>
+        <div>
+            <label>Genre:</label>
+            <br>
+            <div id="genres">
+
+            </div>
+            <!-- Rest of genres -->
+        </div>
+        <br>
+        <div>
+            <label for="director">Director:</label>
+            <input type="text" id="director" name="director" class="w-100">
+        </div>
+        <br>
+        <div>
+            <label for="writers">Writers:</label>
+            <input type="text" id="writers" name="writers" class="w-100">
+        </div>
+        <br>
+        <div>
+            <label for="actors">Actors:</label>
+            <input type="text" id="actors" name="actors" class="w-100">
+        </div>
+        <br>
+        <div>
+            <label for="plot">Plot:</label>
+            <textarea id="plot" name="plot" class="w-100"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="language">Language:</label>
+            <input type="text" id="language" name="language" class="w-100">
+        </div>
+        <br>
+        <div>
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" class="w-100">
+        </div>
+        <br>
+        <div>
+            <label for="awards">Awards:</label>
+            <input type="text" id="awards" name="awards" class="w-100">
+        </div>
+        <br>
+        <div>
+            <label for="poster">Poster URL:</label>
+            <input type="url" id="poster" name="poster" class="w-100">
+        </div>
+        <br>
+        <div>
+            <label for="trailer">Trailer URL:</label>
+            <input type="url" id="trailer" name="trailer" class="w-100">
+        </div>
+        <br>
+        <div>
+            <label for="rating">Rating:</label>
+            <input type="number" id="rating" name="rating" min="0" max="5" class="w-100">
+        </div>
+        <br>
+        <input type="submit" value="Add Movie" class="w-100">
+
+    </form>
+</body>
+<script src="assets/js/"></script>
+</html>
