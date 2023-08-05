@@ -1,3 +1,7 @@
+body
+{
+    min-height: 100vh;
+}
 #movieContainer {
     background-color: rgba(0, 0, 0, 0.2);
     width: 100%;
@@ -9,7 +13,6 @@
     padding-bottom: 1em;
     margin: auto;
     width: 80%;
-
 }
 
 #movieDetails {
@@ -66,7 +69,7 @@ iframe {
     position: absolute;
     transition: all 0.5s ease-in-out;
 }
-#heartButton>i:active {
+#heartButton>i:hover {
     color: #ff0064;
     animation: dancing_heart 1s infinite ease-in-out;
 }

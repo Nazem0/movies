@@ -1,6 +1,6 @@
 @font-face {
     font-family:'Rubik';
-    src: url('/assets/font/Rubik-VariableFont_wght.ttf');
+    src: url('../font/Rubik-VariableFont_wght.ttf');
 }
 
 * {
@@ -23,7 +23,7 @@ body {
 }
 main
 {
-    padding: 4rem 0rem;
+    padding: 5rem 0rem;
     width: 90%;
     display: flex;
     flex-direction: column;
